@@ -61,11 +61,11 @@ figure('Name', sprintf('Monte Carlo S1 vs S2 (Histogram freq), N = %.0e', N_samp
 
 % S1 bin:Bin k: edges(k) ≤ x < edges(k+1)
 
-bin_width_S1 = 0.1;
+bin_width_S1 = 1;
 edges_S1 = -200:bin_width_S1:200;
 
 % S2 
-bin_width_S2 = 0.1;
+bin_width_S2 = 1;
 edges_S2 = -200:bin_width_S2:200;
 
 % === S1 ===
@@ -93,3 +93,4 @@ xlim([-200 200]);
   
     pause(0.5); % 
 end
+
